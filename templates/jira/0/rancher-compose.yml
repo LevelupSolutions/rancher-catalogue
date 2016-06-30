@@ -1,5 +1,5 @@
 .catalog:
-  name: "Atlassian-Jira"
+  name: "Atlassian Jira"
   version: "7.1.8"
   description: "Atlassians Ticketing Tool"
   uuid: jira-7.1.8-0
@@ -13,13 +13,10 @@
       type: "string"
     - variable: "PROXYSCHEME"
       label: "Proxy Scheme"
-      description: "Set the scheme for the proxy."
+      description: "Set the scheme for the proxy. Either HTTP or HTTPS"
       required: true
-      default: HTTPS
-      type: enum
-      options:
-      	- HTTP
-      	- HTTPS
+      default: "HTTPS"
+      type: "string"
     - variable: "PROXYPORT"
       label: "Proxy Port Number"
       description: "Set the port for the proxy."
