@@ -6,5 +6,5 @@ Confluence:
   tty: true
   image: cptactionhank/atlassian-confluence:5.10.1
   volumes:
-  - ${datadir}:/var/atlassian/confluence
+  - /glusterfs/containers/confluence:/var/atlassian/confluence
   stdin_open: true

@@ -4,11 +4,5 @@
   description: "Atlassians Collaboration Tool"
   uuid: confluence-5.10.1-0
   minimum_rancher_version: v0.56.0
-  questions: 
-  	- variable: datadir
-  	  description: "Data Directory for Confluence Data"
-  	  label: "Data Directory"
-  	  type: "string"
-  	  required: false
 Confluence:
   scale: 1
