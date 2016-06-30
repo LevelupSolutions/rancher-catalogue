@@ -1,4 +1,4 @@
-name: NGinX
+name: nginx
 description: |
   Lightweight and fast Server.
 version: 1.11.1

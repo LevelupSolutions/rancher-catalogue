@@ -1,4 +1,4 @@
-NGinX:
+nginx:
   environment:
     VIRTUAL_HOST: "${VHOSTNAME}"
   labels:

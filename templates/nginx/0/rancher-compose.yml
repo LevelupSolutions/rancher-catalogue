@@ -17,5 +17,5 @@
       required: true
       default: "www.somedomain.com"
       type: "string"
-NGinX:
+nginx:
   scale: 1
