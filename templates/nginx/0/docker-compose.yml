@@ -1,0 +1,10 @@
+NGinX:
+  environment:
+    VIRTUAL_HOST: "${VHOSTNAME}"
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: docker:nginx:1.11.1
+  volumes:
+  - ${DATADIR}
+  stdin_open: true
