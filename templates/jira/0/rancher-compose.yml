@@ -15,6 +15,7 @@
       label: "Proxy Scheme"
       description: "Set the scheme for the proxy."
       required: true
+      default: HTTPS
       type: enum
       options:
       	- HTTP
