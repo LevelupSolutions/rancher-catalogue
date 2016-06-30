@@ -4,5 +4,12 @@
   description: "Atlassians Collaboration Tool"
   uuid: confluence-5.10.1-0
   minimum_rancher_version: v0.56.0
+  questions: 
+    - variable: "DATADIR"
+      label: "Data Directory"
+      description: "Set the Data Directory where confluence will store it's data"
+      default: "/somedir/:/var/atlassian/confluence"
+      required: true
+      type: "string"
 Confluence:
   scale: 1
