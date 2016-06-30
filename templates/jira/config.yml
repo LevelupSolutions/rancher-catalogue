@@ -1,5 +1,5 @@
-name: Confluence
+name: Jira
 description: |
-  Atlassians leading collaboration tool for businesses.
-version: 5.10.1
+  Atlassians leading ticketing and Project Management tool for I.T Companies.
+version: 7.1.8
 category: EDM
