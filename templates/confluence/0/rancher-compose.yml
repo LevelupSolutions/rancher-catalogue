@@ -12,7 +12,3 @@
   	  required: true
 Confluence:
   scale: 1
-  metadata:
-  	confluence:
-  		yml:
-  			datadir.name: "${datadir}"
