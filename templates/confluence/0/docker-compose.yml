@@ -1,0 +1,10 @@
+Confluence:
+  ports:
+  - 8090:8090/tcp
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: cptactionhank/atlassian-confluence:5.10.1
+  volumes:
+  - ${datadir}:/var/atlassian/confluence
+  stdin_open: true
