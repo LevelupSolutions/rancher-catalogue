@@ -8,12 +8,12 @@
     - variable: "DATADIR"
       label: "Data Directory"
       description: "Set the Data Directory where confluence will store it's data. Best to have this on shared storage."
-      default: "/somedir/:/var/atlassian/jira"
+      default: "/somedir/:/usr/share/nginx/html"
       required: true
       type: "string"
-    - variable: "VHOSTNAME
-      label: "Hostname
-      description: "Set the hostname of this server e.g www.somedomain.com
+    - variable: "VHOSTNAME"
+      label: "Hostname"
+      description: "Set the hostname of this server e.g www.somedomain.com"
       required: true
       default: "www.somedomain.com"
       type: "string"
