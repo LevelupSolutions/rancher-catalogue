@@ -2,14 +2,14 @@
   name: "Atlassian Confluence"
   version: "5.10.1"
   description: "Atlassians Collaboration Tool"
-  uuid: confluence-0
-  minimum_rancher_version: v0.46.0
+  uuid: confluence-5.10.1-0
+  minimum_rancher_version: v0.56.0
   questions: 
   	- variable: datadir
-  	description: "Data Directory for Confluence Data"
-  	label: "Data Directory"
-  	type: "string"
-  	required: true
+  	  description: "Data Directory for Confluence Data"
+  	  label: "Data Directory"
+  	  type: "string"
+  	  required: true
 Confluence:
   scale: 1
   metadata:
