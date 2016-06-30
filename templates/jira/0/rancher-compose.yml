@@ -1,0 +1,35 @@
+.catalog:
+  name: "Atlassian Jira"
+  version: "7.1.8"
+  description: "Atlassians Ticketing Tool"
+  uuid: jira-7.1.8-0
+  minimum_rancher_version: v0.56.0
+  questions: 
+    - variable: "DATADIR"
+      label: "Data Directory"
+      description: "Set the Data Directory where confluence will store it's data. Best to have this on shared storage."
+      default: "/somedir/:/var/atlassian/jira"
+      required: true
+      type: "string"
+    - variable: "PROXYSCHEME"
+      label: "Proxy Scheme"
+      description: "Set the scheme for the proxy."
+      required: true
+      type: enum
+      options:
+      	- HTTP
+      	- HTTPS
+    - variable: "PROXYPORT"
+      label: "Proxy Port Number"
+      description: "Set the port for the proxy."
+      default: 443
+      required: true
+      type: "int"
+    - variable: "PROXYNAME"
+      label: "Proxy FQDN"
+      description: "Whats the name that people use to access this host."
+      default: "jira.example.com"
+      required: true
+      type: "string"
+Jira:
+  scale: 1

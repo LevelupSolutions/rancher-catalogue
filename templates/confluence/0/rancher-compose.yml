@@ -7,7 +7,7 @@
   questions: 
     - variable: "DATADIR"
       label: "Data Directory"
-      description: "Set the Data Directory where confluence will store it's data"
+      description: "Set the Data Directory where confluence will store it's data. Best to have this on shared storage."
       default: "/somedir/:/var/atlassian/confluence"
       required: true
       type: "string"
