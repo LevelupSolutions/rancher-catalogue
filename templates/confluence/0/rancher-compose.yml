@@ -9,6 +9,6 @@
   	  description: "Data Directory for Confluence Data"
   	  label: "Data Directory"
   	  type: "string"
-  	  required: true
+  	  required: false
 Confluence:
   scale: 1
