@@ -2,9 +2,9 @@ Jira:
   ports:
   - 8080:8080/tcp
   environment:
-    X_PROXY_NAME: ${PROXYNAME}
-    X_PROXY_PORT: ${PROXYPORT}
-    X_PROXY_SCHEME: ${PROXYSCHEME}
+    X_PROXY_NAME: "${PROXYNAME}"
+    X_PROXY_PORT: "${PROXYPORT}"
+    X_PROXY_SCHEME: "${PROXYSCHEME}"
   labels:
     io.rancher.container.pull_image: always
   tty: true
