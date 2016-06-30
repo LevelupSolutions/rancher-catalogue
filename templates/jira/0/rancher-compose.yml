@@ -1,5 +1,5 @@
 .catalog:
-  name: "Atlassian Jira"
+  name: "Atlassian-Jira"
   version: "7.1.8"
   description: "Atlassians Ticketing Tool"
   uuid: jira-7.1.8-0
