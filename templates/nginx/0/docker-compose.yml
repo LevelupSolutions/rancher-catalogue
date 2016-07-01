@@ -4,7 +4,7 @@ nginx:
   labels:
     io.rancher.container.pull_image: always
   tty: true
-  image: docker:nginx:1.11.1
+  image: docker:nginx:1.11.1-alpine
   volumes:
   - ${DATADIR}
   stdin_open: true

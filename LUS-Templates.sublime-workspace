@@ -7,6 +7,17 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "nginx:\n  environment:\n    VIRTUAL_HOST: \"${VHOSTNAME}\"\n  labels:\n    io.rancher.container.pull_image: always\n  tty: true\n  image: docker:nginx:1.11.1-alpine\n  volumes:\n  - ${DATADIR}\n  stdin_open: true",
+			"file": "templates/nginx/0/docker-compose.yml",
+			"file_size": 203,
+			"file_write_time": 1467282909000000,
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"command_palette":
@@ -32,6 +43,11 @@
 	},
 	"file_history":
 	[
+		"/Users/brendonallen/Dev/rancher-catalogue/templates/nginx/0/rancher-compose.yml",
+		"/Users/brendonallen/Dev/rancher-catalogue/templates/nginx/config.yml",
+		"/Users/brendonallen/Dev/rancher-catalogue/templates/nginx/0/docker-compose.yml",
+		"/Users/brendonallen/Dev/rancher-catalogue/templates/nginx/catalogIcon-nginx.svg",
+		"/Users/brendonallen/Dev/rancher-catalogue/templates/nginx/catalogIcon-NGinX.svg",
 		"/Users/brendonallen/Dev/SNMP-Extender/iostat.pl",
 		"/Users/brendonallen/Dev/SNMP-Extender/levelup-snmp-cron",
 		"/Users/brendonallen/Dev/influxdb/README.md",
@@ -105,8 +121,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "templates/nginx/0/docker-compose.yml",
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
