@@ -1,0 +1,6 @@
+.catalog:
+  name: "zurmo"
+  version: "3.1.5-fpm-alpine"
+  description: "CRM"
+  uuid: zurmo-3.1.5
+  minimum_rancher_version: v0.56.0

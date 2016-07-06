@@ -1,0 +1,21 @@
+version: '2'
+services:
+  zurmo:
+    environment:
+      PHP_TIMEZONE: "Australia/Sydney"
+      VIRTUAL_HOST: "zurmo.local"
+    image: lups/zurmo:latest
+    ports:
+     - 8000:80
+    links:
+     - mysql
+     - memcached
+    depends_on:
+     - mysql
+  mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: 123qwe
+      MYSQL_DATABASE: zurmo
+    image: mysql:5.5
+  memcached:
+    image: memcached:alpine
