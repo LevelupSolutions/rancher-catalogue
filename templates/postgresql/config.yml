@@ -1,0 +1,5 @@
+name: PostgreSQL
+description: |
+  PostgreSQL Database Server.
+version: 9.4-11
+category: Database

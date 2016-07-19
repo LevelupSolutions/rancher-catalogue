@@ -1,0 +1,15 @@
+.catalog:
+  name: "Elasticsearch"
+  version: "2.3.4"
+  description: "Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents."
+  uuid: elasticsearch-2.3.4-0
+  minimum_rancher_version: v0.56.0
+  questions: 
+    - variable: "DATADIR"
+      label: "Data Directory"
+      description: "Set the Data Directory where elasticsearch will store it's data. Best to have this on shared storage."
+      default: "/somedir/:/usr/share/elasticsearch/data"
+      required: true
+      type: "string"
+Jira:
+  scale: 1

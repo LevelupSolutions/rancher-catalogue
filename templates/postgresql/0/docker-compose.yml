@@ -1,0 +1,8 @@
+postgresql:
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: docker:sameersbn/postgresql:9.4-11
+  volumes:
+  - ${DATADIR}
+  stdin_open: true

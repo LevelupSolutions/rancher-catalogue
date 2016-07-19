@@ -1,0 +1,5 @@
+name: Elasticsearch
+description: |
+  Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents.
+version: 2.3.4
+category: Database
