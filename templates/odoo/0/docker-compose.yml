@@ -1,4 +1,4 @@
-Confluence:
+Odoo:
   ports:
   - 8069:8069/tcp
   labels:
