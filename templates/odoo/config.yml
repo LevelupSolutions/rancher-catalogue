@@ -1,0 +1,5 @@
+name: Odoo
+description: |
+  Web Based ERP System
+version: 9.0
+category: ERP

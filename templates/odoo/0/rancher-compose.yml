@@ -1,0 +1,21 @@
+.catalog:
+  name: "Odoo"
+  version: "9.0"
+  description: "Open Source ERP System"
+  uuid: odoo-9.0
+  minimum_rancher_version: v0.56.0
+  questions: 
+    - variable: "CONFIGDIR"
+      label: "Config Directory"
+      description: "Set the Config Directory where Odoo will store it's data. Best to have this on shared storage."
+      default: "/somedir/:/etc/odoo"
+      required: true
+      type: "string"
+    - variable: "ADDONDIR"
+      label: "Addon Directory"
+      description: "Set the Addon Directory where Odoo will store it's data. Best to have this on shared storage."
+      default: "/somedir/:/mnt/extra-addons"
+      required: true
+      type: "string"
+Odoo:
+  scale: 1

@@ -1,0 +1,11 @@
+Confluence:
+  ports:
+  - 8069:8069/tcp
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: odoo:9
+  volumes:
+  - ${CONFIGDIR}
+  - ${ADDONDIR}
+  stdin_open: true
