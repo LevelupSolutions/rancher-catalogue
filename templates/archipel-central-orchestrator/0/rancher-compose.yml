@@ -1,8 +1,8 @@
 .catalog:
   name: ""
-  version: "9.4-11"
+  version: "0.6"
   description: "Lightweight and fast Server"
-  uuid: postgresql-9.4-11-0
+  uuid: archipel-central-orchestrator:0.6
   minimum_rancher_version: v0.56.0
   questions: 
     - variable: "xmppdomain"
