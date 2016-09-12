@@ -11,3 +11,5 @@ ejabberd:
     - 5280:5280/tcp
     - 5443:5443/tcp
   stdin_open: true
+  onrun:
+    - ejabberdctl register admin ${xmppdomain} archipel
