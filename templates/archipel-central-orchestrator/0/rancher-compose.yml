@@ -1,0 +1,15 @@
+.catalog:
+  name: ""
+  version: "9.4-11"
+  description: "Lightweight and fast Server"
+  uuid: postgresql-9.4-11-0
+  minimum_rancher_version: v0.56.0
+  questions: 
+    - variable: "xmppdomain"
+      label: "The domain of the host server"
+      description: "Set's the logon directory for the xmpp domain"
+      default: "localhost.localdomain"
+      required: true
+      type: "string"
+ejabberd:
+  scale: 1

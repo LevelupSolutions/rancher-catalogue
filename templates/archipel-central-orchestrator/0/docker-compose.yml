@@ -1,0 +1,13 @@
+ejabberd:
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: levelupsolutions/archipel-ejabberd
+  environment:
+    XMPP_DOMAIN: ${xmppdomain}
+  ports:
+    - 4560:4560/tcp
+    - 5222:5222/tcp
+    - 5280:5280/tcp
+    - 5443:5443/tcp
+  stdin_open: true
